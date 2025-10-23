@@ -128,19 +128,19 @@
                 <h2 class="text-xl font-semibold mb-4 text-indigo-600">1. Betriebspunkt (Ist-Zustand)</h2>
                 <div class="space-y-4">
                     <label class="block">
-                        <span class="text-sm font-medium text-gray-700">Druck $\Delta p_1$ (Ist) [Pa]</span>
+                        <span class="text-sm font-medium text-gray-700">Druck Δp₁ (Ist) [Pa]</span>
                         <input type="number" id="dp1" value="130" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:border-indigo-500">
                     </label>
                     <label class="block">
-                        <span class="text-sm font-medium text-gray-700">Elektrische Leistung $P_{\text{el},1}$ [kW]</span>
+                        <span class="text-sm font-medium text-gray-700">Elektrische Leistung Pₑₗ,₁ [kW]</span>
                         <input type="number" id="pel1" value="5" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:border-indigo-500">
                     </label>
                     <label class="block">
-                        <span class="text-sm font-medium text-gray-700">Drehzahl $n_1$ [min⁻¹]</span>
+                        <span class="text-sm font-medium text-gray-700">Drehzahl n₁ [min⁻¹]</span>
                         <input type="number" id="n1" value="1350" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:border-indigo-500">
                     </label>
                     <div class="text-xs text-gray-500 pt-2">
-                        *Annahme für Volumenstrom-Kalkulation: $\dot{V}_{\text{Nenn}} = 16,7 \text{ m}^3/\text{s}$ bei $n_{\text{Nenn}} = 1050 \text{ min}^{-1}$.
+                        *Annahme für Volumenstrom-Kalkulation: V̇ₙₑₙₙ = 16,7 m³/s bei nₙₑₙₙ = 1050 min⁻¹.
                     </div>
                 </div>
             </div>
@@ -150,19 +150,19 @@
                 <h2 class="text-xl font-semibold mb-4 text-teal-600">2. Ziel & Parameter</h2>
                 <div class="space-y-4">
                     <label class="block">
-                        <span class="text-sm font-medium text-gray-700">Ziel-Druck $\Delta p_2$ (Soll) [Pa]</span>
+                        <span class="text-sm font-medium text-gray-700">Ziel-Druck Δp₂ (Soll) [Pa]</span>
                         <input type="number" id="dp2" value="260" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:border-teal-500 font-bold bg-yellow-100">
                     </label>
                     <label class="block">
-                        <span class="text-sm font-medium text-gray-700">Jährliche Laufzeit $t_{\text{Jahr}}$ [h/a]</span>
+                        <span class="text-sm font-medium text-gray-700">Jährliche Laufzeit t [h/a]</span>
                         <input type="number" id="tJahr" value="8670" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:border-teal-500">
                     </label>
                     <label class="block">
-                        <span class="text-sm font-medium text-gray-700">Jährliche Heizstunden $t_{\text{Heizjahr}}$ [h/a]</span>
+                        <span class="text-sm font-medium text-gray-700">Jährliche Heizstunden tₕₑᵢ𝗓 [h/a]</span>
                         <input type="number" id="tHeizJahr" value="2000" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:border-teal-500">
                     </label>
                     <label class="block">
-                        <span class="text-sm font-medium text-gray-700">Temperaturdifferenz $\Delta T$ [K] (Zuluft - Außen)</span>
+                        <span class="text-sm font-medium text-gray-700">Temperaturdifferenz ΔT [K] (Zuluft - Außen)</span>
                         <input type="number" id="deltaT" value="20" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:border-teal-500">
                     </label>
                 </div>
@@ -173,19 +173,19 @@
                 <h2 class="text-xl font-semibold mb-4 text-red-600">3. Kosten & Effizienz</h2>
                 <div class="space-y-4">
                     <label class="block">
-                        <span class="text-sm font-medium text-gray-700">Strompreis $P_{\text{kwh, el}}$ [€/kWh]</span>
+                        <span class="text-sm font-medium text-gray-700">Strompreis Pₖ𝓌ₕ,ₑₗ [€/kWh]</span>
                         <input type="number" id="pKwhEl" value="0.25" step="0.01" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:border-red-500">
                     </label>
                     <label class="block">
-                        <span class="text-sm font-medium text-gray-700">Heizenergiepreis $P_{\text{kwh, therm}}$ [€/kWh]</span>
+                        <span class="text-sm font-medium text-gray-700">Heizenergiepreis Pₖ𝓌ₕ,ₜₕₑᵣₘ [€/kWh]</span>
                         <input type="number" id="pKwhTherm" value="0.10" step="0.01" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:border-red-500">
                     </label>
                     <label class="block">
-                        <span class="text-sm font-medium text-gray-700">Heizungs-Wirkungsgrad $\eta_{\text{Heizung}}$ [-]</span>
+                        <span class="text-sm font-medium text-gray-700">Heizungs-Wirkungsgrad ηₕₑᵢ𝗓 [-]</span>
                         <input type="number" id="etaHeizung" value="0.90" step="0.01" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 border focus:border-red-500">
                     </label>
                     <div class="text-xs text-gray-500 pt-2">
-                        *Luftdichte $\rho = 1,2 \text{ kg/m}^3$; $c_{\text{p}} = 1005 \text{ J/kgK}$.
+                        *Luftdichte ρ = 1,2 kg/m³; cₚ = 1005 J/kgK.
                     </div>
                 </div>
             </div>
@@ -202,11 +202,11 @@
                 <div class="p-6 bg-blue-50 rounded-lg border border-blue-200">
                     <h3 class="text-xl font-semibold mb-4 text-blue-700">Neuer Betriebspunkt (Theorie)</h3>
                     <div class="space-y-3">
-                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Ziel-Druck $\Delta p_2$:</span> <span id="dpTheorie" class="font-bold text-blue-800"></span></p>
-                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Erforderliche Drehzahl $n_2$:</span> <span id="n2Theorie" class="font-bold text-blue-800"></span></p>
-                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Volumenstrom $V_1$ (Ist):</span> <span id="v1Berechnet" class="font-bold text-gray-600"></span></p>
-                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Volumenstrom $V_2$ (Soll):</span> <span id="v2Berechnet" class="font-bold text-blue-800"></span></p>
-                        <p class="flex justify-between text-sm"><span class="font-medium">Benötigte Leistung $P_{\text{el},2}$:</span> <span id="pel2Theorie" class="font-bold text-blue-800"></span></p>
+                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Ziel-Druck Δp₂:</span> <span id="dpTheorie" class="font-bold text-blue-800"></span></p>
+                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Erforderliche Drehzahl n₂:</span> <span id="n2Theorie" class="font-bold text-blue-800"></span></p>
+                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Volumenstrom V̇₁ (Ist):</span> <span id="v1Berechnet" class="font-bold text-gray-600"></span></p>
+                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Volumenstrom V̇₂ (Soll):</span> <span id="v2Berechnet" class="font-bold text-blue-800"></span></p>
+                        <p class="flex justify-between text-sm"><span class="font-medium">Benötigte Leistung Pₑₗ,₂:</span> <span id="pel2Theorie" class="font-bold text-blue-800"></span></p>
                     </div>
                 </div>
 
@@ -214,9 +214,9 @@
                 <div class="p-6 bg-yellow-50 rounded-lg border border-yellow-200">
                     <h3 class="text-xl font-semibold mb-4 text-yellow-700">Wichtige Differenzen</h3>
                     <div class="space-y-3">
-                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Mehrvolumenstrom $\Delta \dot{V}$:</span> <span id="deltaVValue" class="font-bold text-yellow-800"></span></p>
-                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Mehrleistung Ventilator $\Delta P_{\text{el}}$:</span> <span id="deltaPelValue" class="font-bold text-yellow-800"></span></p>
-                        <p class="flex justify-between text-sm"><span class="font-medium">Zusätzliche thermische Leistung $\Delta P_{\text{therm}}$:</span> <span id="pThermDeltaKW" class="font-bold text-yellow-800"></span></p>
+                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Mehrvolumenstrom ΔV̇:</span> <span id="deltaVValue" class="font-bold text-yellow-800"></span></p>
+                        <p class="flex justify-between border-b pb-1 text-sm"><span class="font-medium">Mehrleistung Ventilator ΔPₑₗ:</span> <span id="deltaPelValue" class="font-bold text-yellow-800"></span></p>
+                        <p class="flex justify-between text-sm"><span class="font-medium">Zusätzliche thermische Leistung ΔPₜₕₑᵣₘ:</span> <span id="pThermDeltaKW" class="font-bold text-yellow-800"></span></p>
                     </div>
                 </div>
             </div>
@@ -242,7 +242,7 @@
 
             <div class="text-xs text-gray-500 mt-6 pt-4 border-t">
                 <p>
-                    *Fachliche Anmerkung: Die Berechnung der Mehrkosten basiert auf den theoretischen Ventilator-Ähnlichkeitsgesetzen ($\Delta p \propto n^2$, $P \propto n^3$) und vereinfachten Annahmen zur Luftdichte und Heizperiode. Die berechneten Werte dienen als fundierte Schätzung für die Kostenprognose.
+                    *Fachliche Anmerkung: Die Berechnung der Mehrkosten basiert auf den theoretischen Ventilator-Ähnlichkeitsgesetzen (Δp ∝ n², P ∝ n³) und vereinfachten Annahmen zur Luftdichte und Heizperiode. Die berechneten Werte dienen als fundierte Schätzung für die Kostenprognose.
                 </p>
             </div>
         </div>
